@@ -27,7 +27,11 @@ class Solution(object):
             fast = fast.next.next
             slow = slow.next
         if fast==slow:
-
-            return True
+            fast = head
+            slow = slow.next
+            while(fast!=slow):
+                fast = fast.next
+                slow = slow.next
+            return fast
         else:
             return None

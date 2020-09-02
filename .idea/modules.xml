@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BinarySearch/BinarySearch.iml" filepath="$PROJECT_DIR$/BinarySearch/BinarySearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data_structrue.iml" filepath="$PROJECT_DIR$/Data_structrue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DivideandConquer/DivideandConquer.iml" filepath="$PROJECT_DIR$/DivideandConquer/DivideandConquer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" filepath="$PROJECT_DIR$/DynamicProgramming/DynamicProgramming.iml" />
       <module fileurl="file://$PROJECT_DIR$/LenkedList/LenkedList.iml" filepath="$PROJECT_DIR$/LenkedList/LenkedList.iml" />
     </modules>
   </component>

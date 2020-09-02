@@ -13,3 +13,24 @@ from ListNode import ListNode
 '''
 class Solution(object):
     def isPalindrome(self, head):
+        if head==None or head.next==None:return True
+        fast = head
+        slow = head
+        while(fast.next!=None and fast.next.next!=None):
+            fast = fast.next.next
+            slow = slow.next
+        slow = self.reverse(slow.next)
+        fast = head
+        while(slow!=None):
+            if fast.val != slow.val:
+                return False
+            slow = slow.next
+            fast = fast.next
+        return True
+
+    def reverse(self,head):
+        if head==None or head.next==None:return head
+        newhead = self.reverse(head.next)
+        head.next.next = head
+        head.next = None
+        return newhead
