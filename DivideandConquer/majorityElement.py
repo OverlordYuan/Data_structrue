@@ -8,6 +8,20 @@
 示例 2:
 输入: [2,2,1,1,1,2,2]
 输出: 2
+字典或者摩尔投票
 '''
 class Solution(object):
     def majorityElement(self, nums):
+        if len(nums)==1:return nums[0]
+        flag = nums[0]
+        count = 1
+        for i in range(1,len(nums)):
+            if count==0:
+                flag = nums[i]
+                count = 1
+            else:
+                if nums[i]==flag:
+                    count += 1
+                else:
+                    count -= 1
+        return flag
