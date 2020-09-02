@@ -1,3 +1,4 @@
+from ListNode import ListNode
 '''
 160. 相交链表
 编写一个程序，找到两个单链表相交的起始节点。
@@ -24,3 +25,23 @@
 '''
 class Solution(object):
     def getIntersectionNode(self, headA, headB):
+        if(headA==None or headB==None):return None
+        a = headA
+        b = headB
+        while(a!=b):
+            if a==None:a = headB
+            else: a = a.next
+            if b==None:b = headA
+            else:b = b.next
+        return a
+if __name__ == "__main__":
+    a = Solution()
+
+    aa = ListNode(2)
+    aa.next = ListNode(6)
+    aa.next.next = ListNode(4)
+    bb = ListNode(1)
+    bb.next = ListNode(5)
+
+    res = a.getIntersectionNode(aa,bb)
+    print(res)

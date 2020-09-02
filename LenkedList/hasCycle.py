@@ -21,7 +21,7 @@ class Solution(object):
     def hasCycle(self, head):
         if head == None:return False
         slow = head
-        fast = head.next.next
+        fast = head.next
         while(fast!=slow and fast!=None and fast.next!=None):
             fast = fast.next.next
             slow = slow.next

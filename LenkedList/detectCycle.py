@@ -1,3 +1,4 @@
+from ListNode import ListNode
 '''
 142. 环形链表 II
 给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
@@ -19,3 +20,14 @@
 '''
 class Solution(object):
     def isPalindrome(self, head):
+        if head == None:return False
+        slow = head
+        fast = head.next
+        while(fast!=slow and fast!=None and fast.next!=None):
+            fast = fast.next.next
+            slow = slow.next
+        if fast==slow:
+
+            return True
+        else:
+            return None
