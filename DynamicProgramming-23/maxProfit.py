@@ -13,7 +13,9 @@
 输出: 0
 解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
 '''
+
 class Solution(object):
+
     def maxProfit(self, prices):
         if len(prices)<1:return 0
         dp = [0]
@@ -27,6 +29,7 @@ class Solution(object):
                 min_p = prices[i]
                 dp.append(0)
         return res
+
 if __name__ == '__main__':
     a  = Solution()
     s = [7,1,5,3,6,4]

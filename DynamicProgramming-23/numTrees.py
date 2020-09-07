@@ -14,6 +14,7 @@
      3     2     1      1   3      2
     /     /       \                 \
    2     1         2                 3
+
 '''
 class Solution(object):
     def numTrees(self, n):
@@ -28,7 +29,9 @@ class Solution(object):
                     temp += dp[j]*dp[i-j-1]
                 dp.append(temp)
         return dp[-1]
+
 if __name__ == '__main__':
+
     a  = Solution()
     s = 3
     res = a.numTrees(s)
