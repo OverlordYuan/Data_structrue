@@ -12,3 +12,17 @@
 输出: 3
 解释: 对应的交易状态为: [买入, 卖出, 冷冻期, 买入, 卖出]
 '''
+class Solution(object):
+    def maxProfit(self, prices):
+        if len(prices)<2:return 0
+        dp0 = -prices[0]
+        dp1 = 0
+        dp2 = 0
+        for i in range(len(prices)):
+            temp0 = max(dp0,dp2-prices[i])
+            temp1 = max(dp0+prices[i],dp1)
+            temp2 = dp1
+            dp0 = temp0
+            dp1 = temp1
+            dp2 = temp2
+        return max(dp0,dp1)

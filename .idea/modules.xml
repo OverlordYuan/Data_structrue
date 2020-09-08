@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BinarySearch-6/BinarySearch-6.iml" filepath="$PROJECT_DIR$/BinarySearch-6/BinarySearch-6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BinarySearch_6/BinarySearch_6.iml" filepath="$PROJECT_DIR$/BinarySearch_6/BinarySearch_6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data_structrue.iml" filepath="$PROJECT_DIR$/Data_structrue.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DivideandConquer-4/DivideandConquer-4.iml" filepath="$PROJECT_DIR$/DivideandConquer-4/DivideandConquer-4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/DynamicProgramming-23/DynamicProgramming-23.iml" filepath="$PROJECT_DIR$/DynamicProgramming-23/DynamicProgramming-23.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LenkedList-11/LenkedList-11.iml" filepath="$PROJECT_DIR$/LenkedList-11/LenkedList-11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DivideandConquer_4/DivideandConquer_4.iml" filepath="$PROJECT_DIR$/DivideandConquer_4/DivideandConquer_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DynamicProgramming_23/DynamicProgramming_23.iml" filepath="$PROJECT_DIR$/DynamicProgramming_23/DynamicProgramming_23.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LenkedList_11/LenkedList_11.iml" filepath="$PROJECT_DIR$/LenkedList_11/LenkedList_11.iml" />
     </modules>
   </component>
 </project>
