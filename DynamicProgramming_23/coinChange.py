@@ -13,3 +13,18 @@
 '''
 class Solution(object):
     def coinChange(self, coins, amount):
+        if amount==0 or len(coins)==0:return 0
+        dp = [amount+1 for i in range(amount+1)]
+        dp[0] = 0
+        for i in range(len(coins)):
+            for j in range(coins[i],amount+1):
+                if j>=coins[i]:
+                    dp[j] = min(dp[j-coins[i]]+1,dp[j])
+        if dp[-1] == amount+1:return -1
+        else:return dp[-1]
+if __name__ == '__main__':
+    a = Solution()
+    s = [2]
+    c = 3
+    res = a.coinChange(s,c)
+    print(res)

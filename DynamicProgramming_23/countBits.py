@@ -12,3 +12,10 @@
 要求算法的空间复杂度为O(n)。
 你能进一步完善解法吗？要求在C++或任何其他语言中不使用任何内置函数（如 C++ 中的 __builtin_popcount）来执行此操作。
 '''
+class Solution(object):
+    def countBits(self, num):
+        dp = [0 for i in range(num+1)]
+        for i in range(1,num+1):
+            if i%2==0:dp[i] = dp[i//2]
+            else:dp[i] = dp[i-1]+1
+        return dp

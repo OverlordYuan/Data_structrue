@@ -17,3 +17,20 @@
 初始的数组的和不会超过 1000 。
 保证返回的最终结果能被 32 位整数存下。
 '''
+class Solution(object):
+    def findTargetSumWays(self, nums, S):
+        sums = sum(nums)
+        if sums<S or (sums+S)%2!=0:return 0
+        target = (sums+S)//2
+        dp = [0 for i in range(target+1)]
+        dp[0] = 1
+        for i in range(len(nums)):
+            for j in range(target,nums[i]-1,-1):
+                dp[j] += dp[j-nums[i]]
+        return dp[-1]
+if __name__ == '__main__':
+    a = Solution()
+    S = [1,1,1,1,1]
+    T = 3
+    res = a.findTargetSumWays(S,T)
+    print(res)

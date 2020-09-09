@@ -13,3 +13,20 @@
 输出: false
 解释: 数组不能分割成两个元素和相等的子集.
 '''
+class Solution(object):
+    def canPartition(self, nums):
+        temp = sum(nums)
+        if temp%2==1:return False
+        target = temp//2
+        dp = [False for i in range(target+1)]
+        dp[0] = True
+        for i in range(len(nums)):
+            for j in range(target,nums[i]-1,-1):
+                dp[j] = dp[j] or dp[j-nums[i]]
+        return dp[-1]
+
+if __name__ == '__main__':
+    a = Solution()
+    s = [1, 5, 11, 5]
+    res = a.canPartition(s)
+    print(res)
