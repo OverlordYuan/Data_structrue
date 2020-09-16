@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Backtracking_8/Backtracking_8.iml" filepath="$PROJECT_DIR$/Backtracking_8/Backtracking_8.iml" />
       <module fileurl="file://$PROJECT_DIR$/BinarySearch_6/BinarySearch_6.iml" filepath="$PROJECT_DIR$/BinarySearch_6/BinarySearch_6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Data_structrue.iml" filepath="$PROJECT_DIR$/Data_structrue.iml" />
       <module fileurl="file://$PROJECT_DIR$/DivideandConquer_4/DivideandConquer_4.iml" filepath="$PROJECT_DIR$/DivideandConquer_4/DivideandConquer_4.iml" />
